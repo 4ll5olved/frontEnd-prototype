@@ -93,4 +93,180 @@ body {
     margin-left: 0;
 }
 
-.introduction {}
+/* intro */
+/* Styling for the introduction section */
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Dark background */
+    color: white; /* White text color */
+    height: 300px; /* Adjust height as needed */
+    text-align: center;
+    padding: 0 20px; /* Add some horizontal padding for smaller screens */
+  }
+  
+  /* Container styling */
+  .container-introduction {
+    max-width: 800px; /* Limit content width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+  }
+  
+  /* Heading styling */
+  .container-introduction h2 {
+    font-size: 2.5rem; /* Adjust based on your design */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Button styling */
+  .container-introduction .button {
+    background-color: #00c853; /* Green background for button */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    display: inline-block;
+  }
+  
+  /* Button hover effect */
+  .container-introduction .button:hover {
+    background-color: #00a845; /* Darker green on hover */
+  }
+  
+  /* Button span styling (optional for customization) */
+  .container-introduction .button span {
+    display: inline-block;
+  }
+  
+/* SVG */
+.features {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    padding: 40px 20px;  
+    background-color: white;  
+    border-radius: 30px;  
+    color: black;  
+    position: relative;  
+    z-index: 1;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    gap: 20px; /* Space between cards */
+    max-width: 90%;  
+    margin: 0 auto;  
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}  
+ 
+
+.feature {  
+    background-color: #f9f5f1; /* Bone white color */
+    text-align: center;  
+    max-width: 250px;  
+    padding: 20px;  
+    border-radius: 20px; /* Rounded corners for card effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin: 0 auto; /* Center align in the grid */
+    flex: 1; /* Ensure flexibility */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+} 
+
+.feature:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.icon {  
+    width: 60px; /* Adjust as necessary */  
+    height: auto;  
+    margin-bottom: 10px;   
+}  
+
+.feature h3 {  
+    font-size: 1.5rem;  
+    margin: 10px 0;  
+}  
+
+.feature p {  
+    font-size: 1rem;  
+    line-height: 1.5;  
+}  
+
+
+/* CARDSS */
+
+.scale {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Adjust gap between cards (smaller gap) */
+    justify-items: center;
+    width: 100%;
+}
+
+
+.stat-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px; /* Reduced padding from 20px to 10px */
+    width: 180px; /* You can adjust this if necessary */
+    height: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+    text-align: center;
+}
+
+
+.icon {
+    width: auto;  
+    height: 180px; 
+    margin-bottom: 10px; /* Adjust space between image and text */
+    position: relative;
+    top: -20px; /* Move the image upwards to overflow it to the top */
+}
+
+
+
+.card1 {
+    background-color: #B2FF59;
+}
+
+.card2 {
+    background-color: #FF7E3D;
+}
+
+.card3 {
+    background-color: #FFCA28;
+}
+
+.card4 {
+    background-color: #84FFFF;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
